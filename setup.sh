@@ -18,7 +18,7 @@ After=network.target
 Environment="AUTOSSH_GATETIME=0"
 User=kali
 Group=kali
-ExecStart=/usr/bin/autossh -M 11166 -N -f -o "PubkeyAuthentication=yes" -o "PasswordAuthentication=no" -o "StrictHostKeyChecking no" -i /home/kali/.ssh/id_rsa -R 6667:localhost:22 vagrant@165.232.32.154
+ExecStart=/usr/bin/autossh -M 11166 -N -f -o "PubkeyAuthentication=yes" -o "PasswordAuthentication=no" -o "StrictHostKeyChecking no" -i /home/kali/.ssh/id_rsa -R 6667:localhost:22 kali@165.232.32.154
 RemainAfterExit=yes
 [Install]
 WantedBy=multi-user.target
