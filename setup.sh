@@ -2,8 +2,8 @@
 
 # Install Nessus
 curl --request GET \
-  --url 'https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.5.3-debian10_amd64.deb' \
-  --output 'Nessus-10.5.3-debian10_amd64.deb'
+  --url 'https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.5.4-debian10_amd64.deb' \
+  --output 'Nessus-10.5.4-debian10_amd64.deb'
 
 yes | dpkg -i Nessus-10.5.3-debian10_amd64.deb
 
