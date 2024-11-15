@@ -7,7 +7,7 @@ sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get clean && sudo a
 # Create SSH keypair and post in cl1p.net
 ssh-keygen -t ed25519 -f /home/kali/.ssh/test -q -N ""
 pubkey="$(cat /home/kali/.ssh/test.pub)"
-curl -H "Content-Type: text/html; charset=UTF-8" -H "cl1papitoken: EXAMPLE_TOKEN" -X POST --data "$pubkey" https://api.cl1p.net/id_ed25519
+curl -H "Content-Type: text/html; charset=UTF-8" -H "cl1papitoken: EXAMPLE_TOKEN" -X POST --data "$pubkey" https://api.cl1p.net/evalian-pt-id_ed25519
 
 # Install Nessus
 curl --request GET \
