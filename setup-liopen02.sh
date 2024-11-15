@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Update
+export DEBIAN_FRONTEND=noninteractive
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get clean && sudo apt autoremove -y
+
 # Create SSH keypair and post in cl1p.net
 ssh-keygen -t ed25519 -f /home/kali/.ssh/test -q -N ""
 pubkey="$(cat /home/kali/.ssh/test.pub)"
